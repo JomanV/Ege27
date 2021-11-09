@@ -2,7 +2,6 @@
 
 using namespace std;
 void number_of_peoducts_div(){
-    cout << "Hello world!" << endl;
     /**
     +1. читать и запомнить входные числа
     2. вывести все пары
@@ -12,7 +11,7 @@ void number_of_peoducts_div(){
     */
     int n(0)
     cin>>n;
-    vector<int> numbers;
+    vector<int> numbers(n,0);
     for (int i(0),i<n,i++)
         cin<<numbers[i];
     for (int i(0),i<n,i++)
