@@ -8,7 +8,7 @@ void max_sum(){
 /*
  + 1.считать число и сохранить
  + 2.вывести пары
-3.вместо пар вывести сумму
+ + 3.вместо пар вывести сумму
 4.проверить делимость сумм
 5.вывести наиб сумму
 */
@@ -19,7 +19,7 @@ void max_sum(){
         ifs>>numbers[i];
     for (int j(0);j<n-1;j++)
         for (int i(j+1);i<n;i++)
-            cout << numbers[j]<<" "<< numbers[i]<<endl;
+            cout << numbers[j] + numbers[i]<<endl;
 }
 
 
