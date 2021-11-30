@@ -1,3 +1,7 @@
 /obj/Debug/main.o
 /bin/Debug/ege27.exe
 *.cbp
+*.o
+*.layout
+*.exe
+*.depend
