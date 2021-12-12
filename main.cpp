@@ -11,6 +11,7 @@ void number_of_products_div() {
     */
     int n(0); int n154(0); int n77(0); int n22(0); int n14(0);
     int n2(0); int n7(0); int n11(0); int n0(0); int num(0);
+    unsigned int result;
     cin >> n;
     for (int i(0); i < n; i++)
     {
@@ -32,7 +33,16 @@ void number_of_products_div() {
         else
             n0++;
     }
-    cout << n154 << " " << n77 << " " << n22 << " " << n14 << " " << n2 << " " << n7 << " " << n11 << " " << n0 << endl;
+    result =
+        n14 * n22 +
+        n77 * n22 +
+        n77 * n14 +
+        n14 * n11 +
+        n77 * n2 +
+        n22 * n7 +
+        (n14 + n22 + n77 + n0 + n7 + n2 + n11) * n154 +
+        n154 * (n154 - 1) / 2;
+    cout << result << endl;
 }
 int main()
 {
