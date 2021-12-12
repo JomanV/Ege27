@@ -9,6 +9,7 @@ void number_of_products_div() {
     4. вывести количество пар кратных 15
     */
     int n(0); int n3(0); int n5(0); int n15(0); int n0(0); int num(0);
+    unsigned int result(0);
     cin >> n;
     for (int i(0); i < n; i++) {
         cin >> num;
@@ -21,7 +22,8 @@ void number_of_products_div() {
         else
             n0++;
     }
-    cout << n15 << " " << n5 << " " << n3 << " " << n0 << endl;
+    result = n15 * (n15 - 1) / 2 + n15 * n0 + n15 * n5 + n15 * n3 + n5 * n3;
+    cout << result << endl;
 }
 int main()
 {
